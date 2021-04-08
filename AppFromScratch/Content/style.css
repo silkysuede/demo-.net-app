@@ -1,0 +1,107 @@
+﻿body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+label
+{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+li {
+    font-family: Arial;
+    width: auto;
+    padding: 1px;
+    font-size: 20px;
+    text-align: left;
+}
+
+ul{
+    display: inline-block;
+    padding-left: 90px;
+    padding-top: 15px;
+}
+.btn-success
+{
+    background-color: lightcoral;
+    border-color: coral;  
+}
+
+
+.forms-group {
+    text-align: center;
+    margin-left: auto;
+}
+
+.form-group 
+{
+    color: black;
+}
+
+.form-control 
+{
+    width: 275px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.center 
+{
+    display: inline-block;
+}
+.signup-header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', sans-serif;
+    color: lightcoral;
+}
+
+.input-validation-error
+{
+    display: inline-block;
+    font-family: Arial;
+}
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: darkred;
+}
+.validation-summary-valid {display: none;}
+
+.list-fix
+{
+    display: inline-block;
+}
+
+.h1-front-page {
+    margin-top: 70px;
+    font-family: Bahnschrift;
+    color: sandybrown;
+    font-size: 50px;
+}
+
+.h2-front-page {
+    color: saddlebrown;
+    font-size: 37px;
+    text-wrap: normal;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.h3-front-page {
+    color: saddlebrown;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+}
+.space
+{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.thank-you
+{
+   
+}

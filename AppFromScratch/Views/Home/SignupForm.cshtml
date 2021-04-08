@@ -1,0 +1,62 @@
+﻿@model AppFromScratch.Models.UserResponses
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="center"><h1 class="signup-header">Sign-up</h1></div>
+    <div class="forms-group">
+        @using (Html.BeginForm())
+        {
+        <div class="list-fix">
+            @Html.ValidationSummary()
+
+                <div class="form-group">
+                    <label>Your Name:</label>
+                    <br />
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Your Email:</label>
+                    <br />
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Your Phone:</label>
+                    <br />
+                    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Political Party:</label>
+                    <br />
+                    @Html.DropDownListFor(x => x.Affiliation, new[] {
+                    new SelectListItem() {Text = "Democrat", Value = bool.TrueString },
+                    new SelectListItem() {Text = "Republican", Value = bool.FalseString } }, "----", new
+                    { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Your Age:</label>
+                    <br />
+                    @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
+                </div>
+                <input class="btn btn-success" type="submit" value="Submit" />
+                <div class="space"></div>
+        </div>
+        }
+    </div>
+</body>
+</html>

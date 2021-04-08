@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="center">
+        <h1 class="h1-front-page">
+            Current Date: @ViewBag.CurrentDate
+        </h1>
+        <br />
+        <br />
+        <h2 class="h2-front-page">
+            The purpose of this application is to get information from the user. We have important updates for you
+            on a meriad of issues and by signing up for this service you will recieve push notifications updating you on these issues.
+        </h2>
+        <br />
+        <br />
+        <h3 class="h3-front-page">
+            First we'll need to collect some basic information from you. If you follow the link below you will be taken to a sign-up
+            page that will collect said information.
+        </h3>
+        @Html.ActionLink("Sign-up Now", "SignupForm", null, new { @class = "btn btn-success" })
+        <div class="space"></div>
+    </div>
+</body>
+</html>

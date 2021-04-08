@@ -1,0 +1,35 @@
+﻿@model AppFromScratch.Models.UserResponses
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <title>ThankYou</title>
+</head>
+<body>
+    <div class="forms-group">
+
+        <br />
+        <br />
+        <div class="space"></div>
+        <h2 class="thank-you">
+            Thank you very much, @Model.Name!
+        </h2>
+        <br />
+        <br />
+        <h3 class="thank-you">
+            You will begin recieving updates immediately.
+        </h3>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", null, new { @class = "btn btn-success" })
+    </div>
+</body>
+</html>
