@@ -2,8 +2,8 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-Scripts/* linguist-vendored
-jquery.js linguist-vendored=false
+AppFromScratch/Scripts/* linguist-vendored
+
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
